@@ -17,6 +17,7 @@ MainWindow::MainWindow(QWidget *parent) :
       buffer[i] = i&0xFF;
 
     tiger(buffer, 65536, res);
+//    sadsadasdsdas
 ////    qDebug(QString("%1").arg((long)res).toAscii());
 //    printf("Hash of a 64K-byte string:\n\t%08X%08X %08X%08X %08X%08X\n",
 //           (word32)(res[0]>>32),
@@ -48,7 +49,6 @@ MainWindow::MainWindow(QWidget *parent) :
          qDebug(str.toAscii());
 }
 
-MainWindow::~MainWindow()
-{
+MainWindow::~MainWindow() {
     delete ui;
 }
